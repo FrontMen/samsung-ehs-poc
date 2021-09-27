@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import FormUserDetails from './FormUserDetails';
 import StartForm from './StartForm';
-import Confirm from './Confirm';
 import Success from './Success';
 
 /*
@@ -64,7 +63,6 @@ export class UserForm extends Component {
 
   // Go back to first step
   resetStep = () => {
-    const { step } = this.state;
     this.setState({
       step: 0,
       LOCATION: '',
